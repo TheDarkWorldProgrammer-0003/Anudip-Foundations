@@ -15,7 +15,6 @@ public class Arrays {
         // Create an array by taking input from user
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the elements of array");
         // Prompt user for array size
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
