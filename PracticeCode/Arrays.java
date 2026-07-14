@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Arrays {
-    
+
     public static void main(String[] args) {
         // int marks [] = {10, 20, 30};
         // // System.out.println(marks); //[I@4517d9a3 it will print the address of
@@ -14,25 +14,74 @@ public class Arrays {
 
         // Create an array by taking input from user
 
-        Scanner sc = new Scanner(System.in);
-        // Prompt user for array size
+        // Scanner sc = new Scanner(System.in);
+        // // Prompt user for array size
+        // System.out.print("Enter the size of the array: ");
+        // int size = sc.nextInt();
+
+        // // Declare and initialize the array
+        // int[] array = new int[size];
+
+        // // Take input for each element
+        // System.out.println("Enter the elements of the array:");
+        // for (int i = 0; i < size; i++) {
+        // array[i] = sc.nextInt(); // taking input from user
+        // }
+
+        // // Print the array
+        // System.out.println("Array elements:");
+        // for (int num : array) {
+        // System.out.print(num + " ");
+        // }
+        // sc.close();
+
+        // Linear search : if elemnt found successfully , print message along with index
+        // position else print other message
+
+         Scanner sc = new Scanner(System.in);
+
+        // Input array size
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
 
-        // Declare and initialize the array
+        // Declare the array
         int[] array = new int[size];
 
-        // Take input for each element
+        // Input array elements
         System.out.println("Enter the elements of the array:");
+
         for (int i = 0; i < size; i++) {
             array[i] = sc.nextInt();
         }
 
-        // Print the array
+        // Input the element to search
+        System.out.print("Enter the element to be searched: ");
+        int n = sc.nextInt();
+
+        boolean found = false;
+
+        // Search for the element
+        for (int i = 0; i < size; i++) {
+
+            if (n == array[i]) {
+                System.out.println("Element is found at index " + i);
+                found = true;
+                break;
+            }
+        }
+
+        // If the element is not present
+        if (!found) {
+            System.out.println("Element is not found.");
+        }
+
+        // Print the complete array
         System.out.println("Array elements:");
+
         for (int num : array) {
             System.out.print(num + " ");
         }
+
         sc.close();
 
     }
