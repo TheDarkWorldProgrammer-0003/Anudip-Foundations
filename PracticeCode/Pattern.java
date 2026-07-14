@@ -102,6 +102,7 @@ if(sum == num){
 else {
     System.out.println("Not a Palindrome Number");
 }
+sc.close();
 }
 }
 
