@@ -109,10 +109,33 @@ public class twodArrays {
 
 // Print the primary diaonal of the array : {10,20,30}
 
+int b [][] = {
+        {10,20,30},
+        {40,50,60},
+        {70,80,90} };
+
+        // for(int i = 0;i<b.length;i++){
+        //     for(int j=0;j<b.length;j++){
+
+        //         if(i==j){
+        //             System.out.print(b[i][j] + " ");
+        //         }
+        //     }
+        // }
+
 
 
 
 // Print the secondry  diaonal of the array : {30,50,70}
+
+ for(int i = 0;i<b.length;i++){
+            for(int j=0;j<b.length;j++){
+
+                if (i + j == b.length - 1){
+                    System.out.print(b[i][j] + " ");
+                }
+            }
+        }
 
 
     }
