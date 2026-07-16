@@ -53,54 +53,66 @@ public class twodArrays {
         // }
         // }
         // Transpose of matrix
-       System.out.print("Enter the number of rows: ");
-        int rows = sc.nextInt();
+    //    System.out.print("Enter the number of rows: ");
+    //     int rows = sc.nextInt();
 
-        System.out.print("Enter the number of columns: ");
-        int col = sc.nextInt();
+    //     System.out.print("Enter the number of columns: ");
+    //     int col = sc.nextInt();
 
-        // Original matrix
-        int[][] a = new int[rows][col];
-        // Transpose matrix
-        int[][] transpose = new int[col][rows];   
+    //     // Original matrix
+    //     int[][] a = new int[rows][col];
+    //     // Transpose matrix
+    //     int[][] transpose = new int[col][rows];   
 
 
-         // Input matrix
-        System.out.println("Enter the matrix elements:");
+    //      // Input matrix
+    //     System.out.println("Enter the matrix elements:");
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < col; j++) {
-                a[i][j] = sc.nextInt();
-            }
-        }
+    //     for (int i = 0; i < rows; i++) {
+    //         for (int j = 0; j < col; j++) {
+    //             a[i][j] = sc.nextInt();
+    //         }
+    //     }
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < col; j++) {
-                transpose[j][i] = a[i][j];
-            }
-        }
-             // Print original matrix
-        System.out.println("\nOriginal Matrix:");
+    //     for (int i = 0; i < rows; i++) {
+    //         for (int j = 0; j < col; j++) {
+    //             transpose[j][i] = a[i][j];
+    //         }
+    //     }
+    //          // Print original matrix
+    //     System.out.println("\nOriginal Matrix:");
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print(a[i][j] + " ");
-            }
-            System.out.println();
-        }
+    //     for (int i = 0; i < rows; i++) {
+    //         for (int j = 0; j < col; j++) {
+    //             System.out.print(a[i][j] + " ");
+    //         }
+    //         System.out.println();
+    //     }
 
-        // Print transpose matrix
-        System.out.println("\nTranspose Matrix:");
+    //     // Print transpose matrix
+    //     System.out.println("\nTranspose Matrix:");
 
-        for (int i = 0; i < col; i++) {
-            for (int j = 0; j < rows; j++) {
-                System.out.print(transpose[i][j] + " ");
-            }
-            System.out.println();
-        }
+    //     for (int i = 0; i < col; i++) {
+    //         for (int j = 0; j < rows; j++) {
+    //             System.out.print(transpose[i][j] + " ");
+    //         }
+    //         System.out.println();
+    //     }
 
-        sc.close();
+    //     sc.close();
 
+
+
+    // Input array is : {10,20,30}
+        //              {40,50,60}
+                //      {70,80,90}
+
+// Print the primary diaonal of the array : {10,20,30}
+
+
+
+
+// Print the secondry  diaonal of the array : {30,50,70}
 
 
     }
