@@ -23,33 +23,33 @@ public class twoDarray {
 
         // Print the secondry diaonal of the array : {30,50,70}
 
-        // for(int i = 0;i<b.length;i++){
-        // for(int j=0;j<b.length;j++){
-
-        // if (i + j == b.length - 1){
-        // System.out.print(b[i][j] + " ");
-        // }
-        // }
-        // }
-        // System.out.println();
-         int even=0, odd =0;
-
-         // Even and Odd no. in 2D Array
         for(int i = 0;i<b.length;i++){
         for(int j=0;j<b.length;j++){
 
-        if(b[i][j] % 2 == 0){
-        even ++;
+        if (i + j == b.length - 1){
+        System.out.print(b[i][j] + " ");
+        }
+        }
+        }
+        System.out.println();
+        //  int even=0, odd =0;
 
-        }
-        else{
-        odd++;
+        //  // Even and Odd no. in 2D Array
+        // for(int i = 0;i<b.length;i++){
+        // for(int j=0;j<b.length;j++){
 
-        }
+        // if(b[i][j] % 2 == 0){
+        // even ++;
 
-        }
-        }
-        System.out.println( "Number of even no.in given matrix = " + even + "Number of even no.in given matrix =  "  + odd);
+        // }
+        // else{
+        // odd++;
+
+        // }
+
+        // }
+        // }
+        // System.out.println( "Number of even no.in given matrix = " + even + "Number of even no.in given matrix =  "  + odd);
 
         // To find the sum of every row and column
 
