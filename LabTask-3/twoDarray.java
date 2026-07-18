@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class twoDarray {
@@ -33,51 +32,50 @@ public class twoDarray {
         // }
         // }
         // System.out.println();
-        // int even=0, odd =0;
+         int even=0, odd =0;
 
-        // // Even and Odd no. in 2D Array
-        // for(int i = 0;i<b.length;i++){
-        // for(int j=0;j<b.length;j++){
+         // Even and Odd no. in 2D Array
+        for(int i = 0;i<b.length;i++){
+        for(int j=0;j<b.length;j++){
 
-        // if(b[i][j] % 2 == 0){
-        // even ++;
+        if(b[i][j] % 2 == 0){
+        even ++;
 
-        // }
-        // else{
-        // odd++;
+        }
+        else{
+        odd++;
 
-        // }
+        }
 
-        // }
-        // }
-        // System.out.println( "Number of even no.in given matrix =" + even + " Number
-        // of even no.in given matrix =" + odd);
+        }
+        }
+        System.out.println( "Number of even no.in given matrix = " + even + "Number of even no.in given matrix =  "  + odd);
 
         // To find the sum of every row and column
 
-        int m = b.length, n = b[0].length;
-        int sume = 0, sumo = 0;
+        // int m = b.length, n = b[0].length;
+        // int sume = 0, sumo = 0;
 
-        // row sum
+        // // row sum
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+        // for (int i = 0; i < m; i++) {
+        //     for (int j = 0; j < n; j++) {
 
-                sume += b[i][j];
+        //         sume += b[i][j];
 
-            }
-            System.out.println("Sum of row " + i + " = " + sume);
-        }
+        //     }
+        //     System.out.println("Sum of row " + i + " = " + sume);
+        // }
 
-        //  column sums
-        for (int j = 0; j < n; j++) {
+        // //  column sums
+        // for (int j = 0; j < n; j++) {
 
-            for (int i = 0; i < m; i++) {
-                sumo += b[i][j];
-            }
-            System.out.println("Sum of col " + j + " = " + sumo);
+        //     for (int i = 0; i < m; i++) {
+        //         sumo += b[i][j];
+        //     }
+        //     System.out.println("Sum of col " + j + " = " + sumo);
 
-        }
+        // }
         sc.close();
 
     }
