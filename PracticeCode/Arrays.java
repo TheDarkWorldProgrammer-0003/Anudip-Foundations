@@ -9,7 +9,7 @@ public class Arrays {
 
         // for (int i=1;i<=marks.length;i++)
         // System.out.println(marks[i]); //20
-        // //30 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException:
+        //30 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException:
         // Index 3 out of bounds forlength 3
 
         // Create an array by taking input from user
